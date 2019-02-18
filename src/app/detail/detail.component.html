@@ -1,5 +1,5 @@
 <app-loader *ngIf="loading"></app-loader>
-<div class="container-fluid foodbackground">
+<div class="container-fluid foodbackground" *ngIf="!loading">
   <nav class="navbar navbar-expand navbar-light">
     <a class="navbar-brand" [routerLink]="['/home']">{{title}}</a>
     <ul class="navbar-nav">
